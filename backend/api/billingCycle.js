@@ -1,5 +1,3 @@
-import { triggerAsyncId } from 'async_hooks';
-
 const restfull = require('node-restful')
 const mongoose = restful.mongoose
 
