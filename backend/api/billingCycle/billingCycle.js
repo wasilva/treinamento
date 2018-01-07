@@ -1,4 +1,4 @@
-const restfull = require('node-restful')
+const restful = require('node-restful')
 const mongoose = restful.mongoose
 
 // Créditos a ser creditado na conta
