@@ -20,4 +20,6 @@ function getSummary(req, res)
   })
 };
 
-module.exports = { getSummary }
+const insertSummary = (req, res) => res.send('OK');
+
+module.exports = { getSummary, insertSummary }
