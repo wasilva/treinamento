@@ -1,4 +1,6 @@
 const mongoose = require('mongoose')
+mongoose.Promise = require("bluebird")
+// module.exports = mongoose.createConnection('mongodb://localhost/db_finance', { useMongoClient: true })
 module.exports = mongoose.connect('mongodb://localhost/db_finance')
 
 mongoose.Error.messages.general.required = "O atributo '{PATH}' é obrigatório."
