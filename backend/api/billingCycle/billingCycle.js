@@ -26,4 +26,3 @@ const billingCyclesSchema = new mongoose.Schema({
 
 // Expotar os modulos de gerenciamento de pagamentos
 module.exports = restful.model('BillingCycle', billingCyclesSchema)
-

@@ -1,5 +1,5 @@
 const jwt = require('jsonwebtoken')
-const env = require('../.env')
+const env = require('../backend/.env')
 
 // protege a API de requisição
 module.exports = (req, res, next) => {
