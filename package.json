@@ -5,6 +5,7 @@
   "main": "loader.js",
   "scripts": {
     "dev": "nodemon",
+    "start": "pm2 start loader.js --name backend",
     "production": "pm2 start loader.js --name backend"
   },
   "author": "Leonardo Leitão",
