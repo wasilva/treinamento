@@ -8,7 +8,7 @@
     "start": "pm2 start loader.js --name backend",
     "production": "pm2 start loader.js --name backend"
   },
-  "author": "Leonardo Leitão",
+  "author": "William Alves da Silva",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^1.0.3",
