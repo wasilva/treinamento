@@ -1,4 +1,3 @@
-
 const restful = require('node-restful')
 const mongoose = restful.mongoose
 
@@ -28,7 +27,7 @@ const cadastroFornecedorSchema = new mongoose.Schema({
     bairro: { type: String, required: false },  
     telefone: { type: Number, required: false }, 
     telefone2: { type: Number, required: false },  
-    email: { type: Number, required: false },
+    email: { type: String, required: false },
     empresa: { type: Number, required: true }, 
     dataregistro: { type: Date, required: true },
     status: { type: String, required: true },  
