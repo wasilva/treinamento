@@ -9,7 +9,7 @@ const tipoContratacaoSchema = new mongoose.Schema({
 
 // Tipo de sexo (MASCULINNO - FEININO)
 const tipoSexoSchema = new mongoose.Schema({
-    cltPj: { type: String, required: true, uppercase: true, enum: ['M', 'F']}
+    genero: { type: String, required: true, uppercase: true, enum: ['M', 'F']}
 })
 
 // Dados complementares (CLT)
@@ -31,10 +31,10 @@ const cadastroFuncionarioSchema = new mongoose.Schema({
     matricula: { type: Number, required: true },
     sexo: { type: String, required: true },
     nomefuncionario: { type: String, required: true },
-    datanascimento: { type: Date, required: true },
+    datanascimento: { type: Date, required: true }, 
     tituloeleitor: { type: Number, required: false },
     rg: { type: Number, required: true },
-    orgaoemissor: { type: Number, required: false },
+    orgaoemissor: { type: String, required: false },
     dataexpedicao: { type: Date, required: false },
     naturalidade: { type: String, required: true },
     cpf: { type: Number, required: true },
@@ -54,12 +54,14 @@ const cadastroFuncionarioSchema = new mongoose.Schema({
     bairro: { type: String, required: false },  
     telefone: { type: Number, required: false }, 
     telefone2: { type: Number, required: false },  
-    email: { type: Number, required: false },
+    email: { type: String, required: false },
     empresa: { type: Number, required: true }, 
     dataregistro: { type: Date, required: true },
     status: { type: String, required: true },  
     login: { type: String, required: true },
     cltPj: [tipoContratacaoSchema],
+    genero: [tipoSexoSchema],
+        
 })
 
 // Expotar os modulos de gerenciamento de pagamentos
