@@ -31,7 +31,9 @@ const cadastroFornecedorSchema = new mongoose.Schema({
     empresa: { type: Number, required: true }, 
     dataregistro: { type: Date, required: true },
     status: { type: String, required: true },  
-    login: { type: String, required: true }
+    login: { type: String, required: true },
+    dadoscomplementar: [dadosComplementarSchema],
+    dadosadministrativo: [dadosAdministrativosSchema]
 })
 
 // Expotar os modulos de gerenciamento de pagamentos
