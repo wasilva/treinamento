@@ -31,6 +31,10 @@ module.exports = function(server) {
   const funcionarioService = require('../backend/api/funcionario/funcionarioService')
   funcionarioService.register(protectedApi, '/funcionarios')
 
+  // rotas da API Cliente
+  const clienteService = require('../backend/api/cliente/clienteService')
+  clienteService.register(protectedApi, '/clientes')
+
   
 }
   
