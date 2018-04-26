@@ -31,16 +31,13 @@ module.exports = function(server) {
   const funcionarioService = require('../backend/api/funcionario/funcionarioService')
   funcionarioService.register(protectedApi, '/funcionarios')
 
-<<<<<<< HEAD
-  // rotas da API Clientes
-  const clienteService = require('../backend/api/cliente/clienteService')
-  clienteService.register(protectedApi, '/clientes')
-=======
   // rotas da API Cliente
   const clienteService = require('../backend/api/cliente/clienteService')
   clienteService.register(protectedApi, '/clientes')
 
->>>>>>> a8668c377bdbabdbd6d1e8b0ee37e54725969783
+  // rotas da API Empresa
+  const empresaService = require('../backend/api/empresa/empresaService')
+  empresaService.register(protectedApi, '/empresas')
   
 }
   
