@@ -4,9 +4,7 @@
   "description": "",
   "main": "loader.js",
   "scripts": {
-    "dev": "nodemon",
-    "start": "pm2 start loader.js --name backend",
-    "production": "pm2 start loader.js --name backend"
+    "dev": "nodemon"
   },
   "author": "William Alves da Silva",
   "license": "ISC",
